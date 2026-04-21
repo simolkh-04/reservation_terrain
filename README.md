@@ -19,54 +19,93 @@
     </a>
 </p>
 
-# ⚡ *KOORA.MA* - Midnight Stadium Edition
+# ⚡ KOORA.MA — Midnight Stadium Edition
 
-*A premium web application for field reservations, designed with a deep "Midnight" aesthetic and neon accents.*  
-Developed with **Laravel** (Backend), **MySQL** (Database), and **TailwindCSS** (Frontend).
+> A premium web application for field reservations, designed with a deep "Midnight" aesthetic and neon accents.  
+> Developed with **Laravel** (Backend), **MySQL** (Database), and **TailwindCSS** (Frontend).
 
 ---
 
-## 🚀 *Features*
+## 🚀 Features
 
-- **🎨 Midnight Stadium Theme**:  
+- **🎨 Midnight Stadium Theme**  
   A completely custom dark mode featuring deep blue backgrounds (`#0B1120`), vibrant neon green accents (`#10B981`), and glassmorphism effects.
 
-- **⏳ Live Dashboard Widgets**:  
+- **⏳ Live Dashboard Widgets**
   - **Kickoff Countdown**: Real-time countdown to your next match.
   - **Weather Widget**: Live weather updates for game day preparation.
 
-- **🏟️ Field Reservations**:  
+- **🏟️ Field Reservations**  
   Interactive booking system with real-time availability and instant confirmation.
 
-- **👤 User Management**:  
+- **👤 User Management**  
   Secure authentication, profile management, and booking history tracking.
 
-- **📱 Responsive Design**:  
+- **📱 Responsive Design**  
   Fully optimized for all devices using TailwindCSS.
 
 ---
 
-## 📂 *Project Structure*
+## ⚙️ Installation
 
-### 🛠 *Backend (Laravel)*  
-Handles authentication, reservation logic, and data management.
+### 1. Clone the repository
 
+```bash
+git clone https://github.com/simolkh-04/reservation_terrain
+cd reservation_terrain
+```
 
-# ⚙ *Installation*
+### 2. Install dependencies
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/simolkh-04/reservation_terrain](https://github.com/simolkh-04/reservation_terrain)
-Install Dependencies:
-bash
+```bash
 composer install
 npm install
-Setup Environment:
-bash
+```
+
+### 3. Setup environment
+
+```bash
 cp .env.example .env
 php artisan key:generate
+```
+
+### 4. Configure your database
+
+Edit the `.env` file and set your database credentials:
+
+```env
+DB_DATABASE=your_database
+DB_USERNAME=your_username
+DB_PASSWORD=your_password
+```
+
+Then run migrations:
+
+```bash
 php artisan migrate
-Run the App:
-bash
+```
+
+### 5. Run the application
+
+```bash
 php artisan serve
 npm run dev
+```
+
+The app will be available at [http://localhost:8000](http://localhost:8000).
+
+---
+
+## 📂 Project Structure
+
+| Layer | Technology | Role |
+|---|---|---|
+| Backend | Laravel | Auth, reservation logic, data management |
+| Database | MySQL | Storage & queries |
+| Frontend | TailwindCSS | Styling & responsive design |
+
+---
+
+## 📄 License
+
+This project is open-sourced under the [MIT License](https://opensource.org/licenses/MIT).
