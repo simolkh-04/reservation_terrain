@@ -56,7 +56,7 @@ Handles authentication, reservation logic, and data management.
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/NIZAR-BENAKKADOU/FIELD-RESERVATIONS.git](https://github.com/NIZAR-BENAKKADOU/FIELD-RESERVATIONS.git)
+   git clone [https://github.com/simolkh-04/reservation_terrain](https://github.com/simolkh-04/reservation_terrain)
 Install Dependencies:
 bash
 composer install
